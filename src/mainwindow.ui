@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Warehouse</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>40</y>
+      <width>641</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="pageContainer">
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelContainerName">
+         <property name="text">
+          <string>Container name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditContainerName"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>181</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelContainerRackNumber">
+         <property name="text">
+          <string>Rack Id</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxContainerRackNumber"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>181</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelContainerShelfNumber">
+         <property name="text">
+          <string>Shelf Number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxContainerShelfNumber"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>240</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QToolButton" name="toolButtonContainerAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonContainerSave">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonContainerDelete">
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="tableViewContainer">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>371</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>181</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelContainerPositionNumber">
+         <property name="text">
+          <string>Position Number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxContainerPositionNumber"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>561</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Значения для КомбоБоксов берутся из родительской таблицы стеллажа</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageQRCode">
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_43">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelQRCodeName">
+         <property name="text">
+          <string>QR Code name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditQRCodeName"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_44">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelQRCodeVerticalPostion">
+         <property name="text">
+          <string>Vertical position, m</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditQRCodeVerticalPostion"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_46">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelQRCodeHorizontalPosition">
+         <property name="text">
+          <string>Horizontal position, m</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditQRCodeHorizontalPosition"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_19">
+       <item>
+        <widget class="QToolButton" name="toolButtonQRCodeAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonQRCodeSave">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonQRCodeDelete">
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="tableViewQRCode">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>371</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>320</y>
+        <width>401</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Не понял насчет добавить 100 qr кодов timeshtamp -51:00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageMain">
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>322</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Warehouse Plan</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton3D">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>3D</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton2D">
+           <property name="text">
+            <string>2D</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>310</y>
+        <width>3</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>340</y>
+        <width>275</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButtonMoveContainer">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Move Container</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonFindContainer">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Find Container</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>300</y>
+        <width>581</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>↑Навигация реализована вкладками↑</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>320</y>
+        <width>291</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вызываются диал. окна или вкладка лучше?</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>280</y>
+        <width>531</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Чтобы не забыть - запросы на перемещение записывается в структуру FILO</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>581</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Или вариант навигации с выпадающим меню с диалоговыми окнами. Пока стоит заглушка </string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>581</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageRack">
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_47">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelRackPosition">
+         <property name="text">
+          <string>Position, m</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="labelRackHorizontal">
+           <property name="text">
+            <string>horizontal</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelRackVertical">
+           <property name="text">
+            <string>vertical</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="lineEditRackHorizontalPosition"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditRackVerticalPosition"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_45">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelRackName">
+         <property name="text">
+          <string>Rack name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditRackName"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>330</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+       <item>
+        <widget class="QToolButton" name="toolButtonRackAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonRackSave">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButtonRackDelete">
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="tableViewRack">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>371</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_49">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelRackNumberShelves">
+         <property name="text">
+          <string>Number of shelves</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditRackNumberShelves"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>270</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelRackNumberPlaces">
+         <property name="text">
+          <string>Number of places</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditRackNumberPlaces"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_52">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelRackSize">
+         <property name="text">
+          <string>Size, m</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="labelRackHeight">
+           <property name="text">
+            <string>height</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelRackWidth">
+           <property name="text">
+            <string>width</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLineEdit" name="lineEditRackHeight"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditRackWidth"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="Scene" name="sceneWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>581</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>641</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayoutMenu">
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QToolButton" name="toolButtonMain">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Main</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="toolButtonContainer">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Container</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QToolButton" name="toolButtonQRCode">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>QRCode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QToolButton" name="toolButtonRack">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Rack</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QToolButton" name="toolButtonClose">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain">
+    <property name="title">
+     <string>Main</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuQR_Code">
+    <property name="title">
+     <string>QR Code</string>
+    </property>
+    <addaction name="action_QR_Code"/>
+    <addaction name="actionDelete_QR_Code"/>
+    <addaction name="actionEdit_QR_Code"/>
+   </widget>
+   <widget class="QMenu" name="menuWarehouse_Plan">
+    <property name="title">
+     <string>Warehouse Plan</string>
+    </property>
+    <addaction name="actionWarehoise_2D_plan"/>
+    <addaction name="actionWarehouse_3D_plan"/>
+   </widget>
+   <widget class="QMenu" name="menuContainer">
+    <property name="title">
+     <string>Container</string>
+    </property>
+    <addaction name="actionAdd_Container"/>
+    <addaction name="actionDelete_Container"/>
+    <addaction name="actionEdit_Container"/>
+   </widget>
+   <widget class="QMenu" name="menuRack">
+    <property name="title">
+     <string>Rack</string>
+    </property>
+    <addaction name="actionAdd_Rack"/>
+    <addaction name="actionDelete_Rack"/>
+    <addaction name="actionEdit_Rack"/>
+   </widget>
+   <addaction name="menuMain"/>
+   <addaction name="menuWarehouse_Plan"/>
+   <addaction name="menuContainer"/>
+   <addaction name="menuQR_Code"/>
+   <addaction name="menuRack"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMainMenu">
+   <property name="text">
+    <string>Main</string>
+   </property>
+   <property name="toolTip">
+    <string>goto MainMenu</string>
+   </property>
+  </action>
+  <action name="actionWerehousePlan">
+   <property name="text">
+    <string>План склада</string>
+   </property>
+   <property name="toolTip">
+    <string>goto WarehousePlan</string>
+   </property>
+  </action>
+  <action name="actionAddQRCode">
+   <property name="text">
+    <string>Добавить QR код</string>
+   </property>
+  </action>
+  <action name="actionAddRack">
+   <property name="text">
+    <string>Добавить стеллаж</string>
+   </property>
+  </action>
+  <action name="actionАddContainer">
+   <property name="text">
+    <string>Добавить контейнер</string>
+   </property>
+  </action>
+  <action name="actionMoveContainer">
+   <property name="text">
+    <string>Отправить погрузчик</string>
+   </property>
+  </action>
+  <action name="action_QR_Code">
+   <property name="text">
+    <string>Add QR Code</string>
+   </property>
+  </action>
+  <action name="actionDelete_QR_Code">
+   <property name="text">
+    <string>Delete QR Code</string>
+   </property>
+  </action>
+  <action name="actionEdit_QR_Code">
+   <property name="text">
+    <string>Edit QR Code</string>
+   </property>
+  </action>
+  <action name="actionWarehoise_2D_plan">
+   <property name="text">
+    <string>Warehouse 2D plan</string>
+   </property>
+  </action>
+  <action name="actionWarehouse_3D_plan">
+   <property name="text">
+    <string>Warehouse 3D plan</string>
+   </property>
+  </action>
+  <action name="actionAdd_Container">
+   <property name="text">
+    <string>Add Container</string>
+   </property>
+  </action>
+  <action name="actionDelete_Container">
+   <property name="text">
+    <string>Delete Container</string>
+   </property>
+  </action>
+  <action name="actionEdit_Container">
+   <property name="text">
+    <string>Edit Container</string>
+   </property>
+  </action>
+  <action name="actionAdd_Rack">
+   <property name="text">
+    <string>Add Rack</string>
+   </property>
+  </action>
+  <action name="actionDelete_Rack">
+   <property name="text">
+    <string>Delete Rack</string>
+   </property>
+  </action>
+  <action name="actionEdit_Rack">
+   <property name="text">
+    <string>Edit Rack</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Scene</class>
+   <extends>QWidget</extends>
+   <header>scene.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>toolButtonMain</tabstop>
+  <tabstop>toolButtonContainer</tabstop>
+  <tabstop>toolButtonQRCode</tabstop>
+  <tabstop>toolButtonRack</tabstop>
+  <tabstop>toolButtonClose</tabstop>
+  <tabstop>pushButtonMoveContainer</tabstop>
+  <tabstop>pushButtonFindContainer</tabstop>
+  <tabstop>lineEditContainerName</tabstop>
+  <tabstop>comboBoxContainerRackNumber</tabstop>
+  <tabstop>comboBoxContainerShelfNumber</tabstop>
+  <tabstop>comboBoxContainerPositionNumber</tabstop>
+  <tabstop>toolButtonContainerAdd</tabstop>
+  <tabstop>toolButtonContainerSave</tabstop>
+  <tabstop>toolButtonContainerDelete</tabstop>
+  <tabstop>tableViewContainer</tabstop>
+  <tabstop>lineEditQRCodeName</tabstop>
+  <tabstop>lineEditQRCodeHorizontalPosition</tabstop>
+  <tabstop>lineEditQRCodeVerticalPostion</tabstop>
+  <tabstop>toolButtonQRCodeAdd</tabstop>
+  <tabstop>toolButtonQRCodeSave</tabstop>
+  <tabstop>toolButtonQRCodeDelete</tabstop>
+  <tabstop>tableViewQRCode</tabstop>
+  <tabstop>lineEditRackName</tabstop>
+  <tabstop>lineEditRackHorizontalPosition</tabstop>
+  <tabstop>lineEditRackVerticalPosition</tabstop>
+  <tabstop>lineEditRackHeight</tabstop>
+  <tabstop>lineEditRackWidth</tabstop>
+  <tabstop>lineEditRackNumberShelves</tabstop>
+  <tabstop>lineEditRackNumberPlaces</tabstop>
+  <tabstop>toolButtonRackAdd</tabstop>
+  <tabstop>toolButtonRackSave</tabstop>
+  <tabstop>toolButtonRackDelete</tabstop>
+  <tabstop>tableViewRack</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

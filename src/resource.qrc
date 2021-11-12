@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>pic/3Dplan640.png</file>
+        <file>pic/2Dplan.png</file>
+        <file>pic/QRCode.png</file>
+        <file>pic/3Dplan.png</file>
+    </qresource>
+</RCC>

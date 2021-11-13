@@ -8,3 +8,19 @@
   - Проведет статический анализ (опционально)
   - Проведет контроль тестового покрытия (опционально)
   - Сформирует docker образ (опционально)
+
+## Запуск gcov
+ ```
+ make
+ ./container_test
+ gcov main.cpp
+ ```
+ или 
+  ```
+ make
+ make gcov
+ ```
+
+## Gcov result
+
+<img src="/pic/gcovResult.png" width=50% height=50%>

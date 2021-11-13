@@ -1,5 +1,7 @@
 name: C/C++ CI
-
+defaults:
+  run:
+    working-directory: pz3
 on:
   push:
     branches: [ main ]

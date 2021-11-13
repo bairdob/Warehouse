@@ -11,7 +11,7 @@ GCOV_FLAGS = -fprofile-arcs -ftest-coverage
 OBJECTS = main.o 
 TARGET = container_test
 
-all: $(TARGET) gcov
+all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
 			g++ -o $(TARGET) $(OBJECTS) $(LD_FLAGS) $(GCOV_FLAGS)
@@ -19,8 +19,11 @@ $(TARGET): $(OBJECTS)
 %.o : %.cpp
 			$(G++) $(G++_FLAGS) $(GCOV_FLAGS) $<
 
-gcov: container_test
+.ONESHELL:
+gcov: container_test main.cpp 
 	./container_test
+	gcov main.cpp 
+	
 
 clean:
 			rm -rf *.gcov *.gcda *.gcno $(TARGET) $(OBJECTS) 

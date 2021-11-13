@@ -1,15 +1,23 @@
-name: googletest-project
+name: GTest
 on:
   push:
-    paths-ignore:
-    - 'resources/**'
-    - 'README.md'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
-  test-project:
-    name: Test Project
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Test project with googletest.
-      uses: arvsrao/googletest-action@master
+    - name: Clone GTest
+      run:  git clone https://github.com/google/googletest.git -b release-1.10.0
+    - name: Install gtest manually
+      working-directory: ./pz3
+      run:  sudo apt install python3-pip &&
+            cmake . &&
+            make &&
+            sudo make install
+    - uses: actions/checkout@v1
+    - name: Run Test
+      run:  bazel test --test_output=all //Tests:APP_test

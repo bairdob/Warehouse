@@ -1,0 +1,27 @@
+name: GTest
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone GTest
+      run:  git clone https://github.com/google/googletest.git -b release-1.10.0
+    - name: Install gtest manually
+      working-directory: ./googletest
+      run:  sudo apt install python3-pip &&
+            cmake . &&
+            make &&
+            sudo make install
+    - uses: actions/checkout@v2
+    - name: make
+      working-directory: ./pz2
+      run:  make
+    - name: Run Test
+      working-directory: ./pz2
+      run: ./container_test 

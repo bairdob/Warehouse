@@ -31,3 +31,4 @@
 *.out
 *.app
 .DS_Store
+src/Warehouse.pro.user

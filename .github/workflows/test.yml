@@ -14,8 +14,8 @@ jobs:
     - name: Test project with googletest.
       uses: arvsrao/googletest-action@master
     - name: make
-      working-directory: ./pz3
+      working-directory: ./pz2
       run:  make
     - name: Run Test
-      working-directory: ./pz3
+      working-directory: ./pz2
       run: ./container_test 

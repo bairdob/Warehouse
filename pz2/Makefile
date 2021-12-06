@@ -1,7 +1,7 @@
 # Makefile for gtest examples
 
 GOOGLE_TEST_LIB = gtest
-GOOGLE_TEST_INCLUDE = /usr/local/include
+GOOGLE_TEST_INCLUDE = $GTEST_HOME/include
 
 G++ = g++
 G++_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE) -std=c++17

@@ -1,21 +1,21 @@
-name: CI
+name: googletest-project
+ on:
+   push:
+     paths-ignore:
+     - 'resources/**'
+     - 'README.md'
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Install gtest manually
-      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
-    - uses: actions/checkout@v1
-    - name: make
-      working-directory: ./pz3
-      run:  make
-    - name: Run Test
-      working-directory: ./pz3
-      run: ./container_test 
+ jobs:
+   test-project:
+     name: Test Project
+     runs-on: ubuntu-latest
+     steps:
+     - uses: actions/checkout@v2
+     - name: Test project with googletest.
+       uses: arvsrao/googletest-action@master
+     - name: make
+       working-directory: ./pz3
+       run:  make
+     - name: Run Test
+       working-directory: ./pz3
+       run: ./container_test 

@@ -13,3 +13,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Test project with googletest.
       uses: arvsrao/googletest-action@master
+    - name: make
+      working-directory: ./pz3
+      run:  make
+    - name: Run Test
+      working-directory: ./pz3
+      run: ./container_test 

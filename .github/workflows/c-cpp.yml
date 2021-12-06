@@ -19,5 +19,9 @@ jobs:
             make &&
             sudo make install
     - uses: actions/checkout@v2
+    - name: make
+      working-directory: ./pz2
+      run:  make
     - name: Run Test
-      run: echo Hello, world!
+      working-directory: ./pz2
+      run: ./container_test 

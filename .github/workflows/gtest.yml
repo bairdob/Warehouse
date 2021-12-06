@@ -1,11 +1,12 @@
 name: googletest-project
- on:
+
+on:
    push:
      paths-ignore:
      - 'resources/**'
      - 'README.md'
 
- jobs:
+jobs:
    test-project:
      name: Test Project
      runs-on: ubuntu-latest

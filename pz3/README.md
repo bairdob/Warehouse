@@ -24,3 +24,8 @@
 ## Gcov result
 
 <img src="/pic/gcovResult.png" width=50% height=50%>
+
+## GithubAction with Gtest result
+
+<img src="/pic/githubActionGtest.png" width=75% height=75%>
+

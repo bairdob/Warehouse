@@ -21,6 +21,6 @@ kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 -
 
 ## Kafka result
 
-<!--  <img src="/pic/kafkaResult.gif" width=50% height=50%> --> 
+<img src="/pic/kafkaResult.gif" width=50% height=50%>
 
 
